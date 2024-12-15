@@ -1,6 +1,6 @@
 This is the WEB version of the popular game that is called — OSU!
 
-Here you should click yellow circle that appears instantly after you clicked the previous one. The position of the circle depends on the audiowaves. BPM is not taken in consideration.
+In this game you should click yellow circle that appears instantly after you clicked the previous one. The position of the circle depends on the audiowaves. BPM is not taken in consideration.
 
 1) Download the song or play with already installed.
 2) The song should be in the game folder and should be called 'audio.mp3'.
