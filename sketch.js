@@ -97,7 +97,6 @@ function keyPressed()
     {
         isInitialised = true;
         loops += 1;
-        console.log("loops was added");
         
         r = rate_slider.value();
         if (isLoaded)
@@ -107,15 +106,17 @@ function keyPressed()
     {
         if (key == 'p')
         {
-            if (!sound.isPlaying()){ // starting next try
+            if (!sound.isPlaying() && !sound.isPaused()){ // starting next try
                 if (cmax < Math.floor(count * r * 1000 / sound.duration())){
                     cmax = Math.floor(count * r * 1000 / sound.duration()); // checking was the record updated or not
-                }
-                else{
+                }else{
                     count = 0; // reset touches
                     r = rate_slider.value(); // set new music speed
                     sound.play(0, r); // here we go
+                    loops += 1;
                 }
+            }else if(sound.isPaused()){
+                sound.play(0, r);
             }
             else{
                 sound.pause();
