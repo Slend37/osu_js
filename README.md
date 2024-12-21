@@ -10,6 +10,6 @@ In this game you should click the yellow circle that appears instantly after you
 6) In the corner you will be able to see the stats like 'Touches', 'Score' and 'Best score'.
 7) The score system is flexible, so you can play any song on any speed and the score evaluates only your aim skill.
    e.g: one person can play 3-minutes song on 3x speed while other person can play 1-minute song on 0.5x speed, but the score formula takes it into consideration and make the scores balanced!
-8) When the song will be finished, the updated rating will be downloaded automatically.
+8) When the song will be finished, you can save your result.
 9) After it you can start a new try with the new speed and to beat your record!
 10) HAVE FUUUUUN!
