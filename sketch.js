@@ -16,12 +16,20 @@ let RatingData; // data with the records
 let cmax = 0; // max score in data
 
 const button = document.getElementById("save");
+button.style.background = "red";
 button.addEventListener("click", () =>{
     let newRow = RatingData.addRow(); // new row in data
     newRow.setString('duration', sound.duration() / r); // set the duration of the song
     newRow.setString('score', Math.floor(count * r * 1000 / sound.duration())); // set the score that was just made
     loops = 0; // reset loops to not spam
     save(RatingData, "rating.csv"); // saving new data
+});
+
+button.addEventListener("mouseover", () =>{
+    button.style.background = "yellow";
+});
+button.addEventListener("mouseout", () =>{
+    button.style.background = "red";
 });
 
 function preload()
@@ -34,7 +42,6 @@ function preload()
     });
     isInitialised = false; 
     sound.setVolume(0.2); // volume - 20%
-    
 }
 
 function setup()
